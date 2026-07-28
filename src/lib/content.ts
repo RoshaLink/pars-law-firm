@@ -137,6 +137,9 @@ export const TEAM: TeamMember[] = [
   { id: "daniel-farrokh", name: "Daniel Farrokh", role: { en: "Partner, Family Law", fa: "شریک، حقوق خانواده" }, initials: "DF" },
   { id: "leila-amini", name: "Leila Amini", role: { en: "Senior Associate, Immigration", fa: "وکیل ارشد، مهاجرت" }, initials: "LA" },
   { id: "kian-moradi", name: "Kian Moradi", role: { en: "Associate, Family Law", fa: "وکیل، حقوق خانواده" }, initials: "KM" },
+  { id: "neda-hosseini", name: "Neda Hosseini", role: { en: "Immigration Paralegal", fa: "دستیار حقوقی، مهاجرت" }, initials: "NH" },
+  { id: "arman-tehrani", name: "Arman Tehrani", role: { en: "Law Clerk, Family Law", fa: "منشی حقوقی، حقوق خانواده" }, initials: "AT" },
+  { id: "roya-kazemi", name: "Roya Kazemi", role: { en: "Office Manager", fa: "مدیر دفتر" }, initials: "RK" },
 ];
 
 export const TEAM_QUOTE = {
