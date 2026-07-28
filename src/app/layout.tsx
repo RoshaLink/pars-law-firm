@@ -1,20 +1,35 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Fraunces, Inter, Vazirmatn, Noto_Naskh_Arabic } from "next/font/google";
+import { LanguageProvider } from "@/lib/language-context";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
+  variable: "--font-sans",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const fraunces = Fraunces({
+  variable: "--font-display",
   subsets: ["latin"],
+  weight: ["400", "500", "600"],
+});
+
+const vazirmatn = Vazirmatn({
+  variable: "--font-farsi",
+  subsets: ["arabic"],
+  weight: ["400", "500", "600", "700"],
+});
+
+const notoNaskhArabic = Noto_Naskh_Arabic({
+  variable: "--font-farsi-display",
+  subsets: ["arabic"],
+  weight: ["400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
-  title: "Website Clone",
-  description: "Pixel-perfect website clone",
+  title: "Pars | Immigration & Family Law, Toronto",
+  description:
+    "Pars is a Toronto immigration and family law practice, fully bilingual in English and Farsi.",
 };
 
 export default function RootLayout({
@@ -25,9 +40,11 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${inter.variable} ${fraunces.variable} ${vazirmatn.variable} ${notoNaskhArabic.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col bg-background text-foreground">
+        <LanguageProvider>{children}</LanguageProvider>
+      </body>
     </html>
   );
 }
