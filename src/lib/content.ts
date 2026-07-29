@@ -133,13 +133,13 @@ export const CASE_RESULTS: CaseResult[] = [
 ];
 
 export const TEAM: TeamMember[] = [
-  { id: "sara-rostami", name: "Sara Rostami", role: { en: "Founding Partner, Immigration", fa: "شریک مؤسس، مهاجرت" }, initials: "SR" },
-  { id: "daniel-farrokh", name: "Daniel Farrokh", role: { en: "Partner, Family Law", fa: "شریک، حقوق خانواده" }, initials: "DF" },
-  { id: "leila-amini", name: "Leila Amini", role: { en: "Senior Associate, Immigration", fa: "وکیل ارشد، مهاجرت" }, initials: "LA" },
-  { id: "kian-moradi", name: "Kian Moradi", role: { en: "Associate, Family Law", fa: "وکیل، حقوق خانواده" }, initials: "KM" },
-  { id: "neda-hosseini", name: "Neda Hosseini", role: { en: "Immigration Paralegal", fa: "دستیار حقوقی، مهاجرت" }, initials: "NH" },
-  { id: "arman-tehrani", name: "Arman Tehrani", role: { en: "Law Clerk, Family Law", fa: "منشی حقوقی، حقوق خانواده" }, initials: "AT" },
-  { id: "roya-kazemi", name: "Roya Kazemi", role: { en: "Office Manager", fa: "مدیر دفتر" }, initials: "RK" },
+  { id: "sara-rostami", name: "Sara Rostami", role: { en: "Founding Partner, Immigration", fa: "شریک مؤسس، مهاجرت" }, initials: "SR", photo: "/images/team/sara-rostami.png" },
+  { id: "daniel-farrokh", name: "Daniel Farrokh", role: { en: "Partner, Family Law", fa: "شریک، حقوق خانواده" }, initials: "DF", photo: "/images/team/daniel-farrokh.png" },
+  { id: "leila-amini", name: "Leila Amini", role: { en: "Senior Associate, Immigration", fa: "وکیل ارشد، مهاجرت" }, initials: "LA", photo: "/images/team/leila-amini.png" },
+  { id: "kian-moradi", name: "Kian Moradi", role: { en: "Associate, Family Law", fa: "وکیل، حقوق خانواده" }, initials: "KM", photo: "/images/team/kian-moradi.png" },
+  { id: "neda-hosseini", name: "Neda Hosseini", role: { en: "Immigration Paralegal", fa: "دستیار حقوقی، مهاجرت" }, initials: "NH", photo: "/images/team/neda-hosseini.png" },
+  { id: "arman-tehrani", name: "Arman Tehrani", role: { en: "Law Clerk, Family Law", fa: "منشی حقوقی، حقوق خانواده" }, initials: "AT", photo: "/images/team/arman-tehrani.png" },
+  { id: "roya-kazemi", name: "Roya Kazemi", role: { en: "Office Manager", fa: "مدیر دفتر" }, initials: "RK", photo: "/images/team/roya-kazemi.png" },
 ];
 
 export const TEAM_QUOTE = {

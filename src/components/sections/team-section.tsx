@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { LocalizedBlock } from "@/components/localized-block";
 import { useLanguage } from "@/lib/language-context";
 import { UI, t } from "@/lib/dictionary";
@@ -18,8 +19,20 @@ export function TeamSection() {
         <div className="mt-12 grid grid-cols-2 gap-6 md:grid-cols-4">
           {TEAM.map((member) => (
             <div key={member.id} className="flex flex-col gap-3">
-              <div className="flex aspect-[3/4] items-center justify-center bg-[linear-gradient(135deg,_oklch(0.26_0.01_260),_oklch(0.19_0.01_260))]">
-                <span className="font-display text-3xl text-foreground/25">{member.initials}</span>
+              <div className="relative aspect-[3/4] overflow-hidden bg-[linear-gradient(135deg,_oklch(0.26_0.01_260),_oklch(0.19_0.01_260))]">
+                {member.photo ? (
+                  <Image
+                    src={member.photo}
+                    alt={member.name}
+                    fill
+                    sizes="(min-width: 768px) 25vw, 50vw"
+                    className="object-cover"
+                  />
+                ) : (
+                  <span className="flex size-full items-center justify-center font-display text-3xl text-foreground/25">
+                    {member.initials}
+                  </span>
+                )}
               </div>
               <div>
                 <p className="font-semibold">{member.name}</p>

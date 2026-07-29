@@ -37,6 +37,7 @@ export interface TeamMember {
   name: string;
   role: LocalizedText;
   initials: string;
+  photo?: string;
 }
 
 export interface OfficeContact {
