@@ -1,9 +1,8 @@
 "use client";
 
-import { Scale } from "lucide-react";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { LocalizedBlock } from "@/components/localized-block";
-import { PlaceholderPhoto } from "@/components/placeholder-media";
 import { useLanguage } from "@/lib/language-context";
 import { UI, t } from "@/lib/dictionary";
 
@@ -27,7 +26,15 @@ export function PracticeAreasSection() {
           {t(UI.practiceCta, locale)}
         </Button>
       </div>
-      <PlaceholderPhoto icon={Scale} className="min-h-[420px] lg:min-h-full" />
+      <div className="relative min-h-[420px] overflow-hidden lg:min-h-full">
+        <Image
+          src="/images/practice-areas.webp"
+          alt=""
+          fill
+          sizes="(min-width: 1024px) 50vw, 100vw"
+          className="object-cover"
+        />
+      </div>
     </section>
   );
 }

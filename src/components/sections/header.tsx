@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { LocalizedBlock } from "@/components/localized-block";
@@ -29,11 +30,8 @@ export function Header() {
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-border/60 bg-background/80 backdrop-blur-md">
       <div className="container-pars flex h-20 items-center justify-between">
-        <a href="#top" className="flex items-center gap-3" aria-label="Pars home">
-          <span className="flex size-10 items-center justify-center border border-primary/60 text-lg font-semibold text-primary">
-            P
-          </span>
-          <span className="font-display text-xl tracking-wide">PARS</span>
+        <a href="#top" className="flex items-center" aria-label="Pars home">
+          <Image src="/images/logo-mark.webp" alt="Pars" width={48} height={48} className="size-11" priority />
         </a>
 
         <div className="flex items-center gap-3 md:gap-5">

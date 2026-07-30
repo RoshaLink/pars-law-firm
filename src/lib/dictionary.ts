@@ -7,20 +7,20 @@ export const UI = {
   menuOpen: { en: "Menu", fa: "منو" },
   menuClose: { en: "Close", fa: "بستن" },
 
-  heroHeadline: { en: "We are Pars", fa: "ما پارس هستیم" },
+  heroHeadline: { en: "We are Pars", fa: "دفتر حقوقی پارس" },
   heroSubhead: {
     en: "Immigration and family law counsel for Toronto's Persian community and beyond — direct advice, carried all the way through.",
-    fa: "مشاوره حقوقی مهاجرت و خانواده برای جامعه فارسی‌زبان تورنتو و فراتر از آن — مشاوره مستقیم، همراه شما تا پایان مسیر.",
+    fa: "مشاوره حقوقی در حوزه مهاجرت و خانواده برای جامعه فارسی‌زبان تورنتو و فراتر از آن — راهنمایی مستقیم، همراه شما تا پایان مسیر.",
   },
   heroCta: { en: "Book a Consultation", fa: "رزرو مشاوره" },
 
   welcomeHeading: { en: "Welcome to Pars", fa: "به پارس خوش آمدید" },
   welcomeBody: {
     en: "We're a Toronto immigration and family law practice built around one idea: legal advocacy should feel personal. Our door stays open — come tell us about your situation.",
-    fa: "ما یک دفتر حقوقی مهاجرت و خانواده در تورنتو هستیم که بر پایه یک ایده شکل گرفته: وکالت حقوقی باید حس شخصی داشته باشد. درِ ما همیشه باز است — بیایید و در مورد وضعیت خود با ما صحبت کنید.",
+    fa: "ما یک دفتر حقوقی مهاجرت و خانواده در تورنتو هستیم که بر پایه یک ایده شکل گرفته: دفاع حقوقی باید رویکردی شخصی داشته باشد. درِ ما همیشه باز است — بیایید و در مورد وضعیت خود با ما صحبت کنید.",
   },
 
-  insightsHeading: { en: "Recent Insights", fa: "دیدگاه‌های اخیر" },
+  insightsHeading: { en: "Recent Insights", fa: "تازه‌ترین اخبار و مقالات" },
   insightsMoreNews: { en: "More News", fa: "اخبار بیشتر" },
   insightsMoreArticles: { en: "More Articles", fa: "مقالات بیشتر" },
   readMore: { en: "Read more", fa: "ادامه مطلب" },
@@ -39,11 +39,11 @@ export const UI = {
   },
   caseResultsCta: { en: "View Outcome", fa: "مشاهده نتیجه" },
 
-  teamHeading: { en: "Meet the People at Pars", fa: "با افراد پارس آشنا شوید" },
+  teamHeading: { en: "Meet the People at Pars", fa: "با اعضای تیم پارس آشنا شوید" },
   teamLinkLabel: { en: "Meet the Team", fa: "با تیم آشنا شوید" },
 
   careersEyebrow: { en: "Careers", fa: "فرصت‌های شغلی" },
-  careersHeading: { en: "Ready for a Pars kind of day?", fa: "آماده یک روز پارسی هستید؟" },
+  careersHeading: { en: "Ready for a Pars kind of day?", fa: "آماده یک روز در پارس هستید؟" },
   careersBody: {
     en: "We're always looking for lawyers and staff who want real client contact from day one — in a firm small enough that your work is never anonymous.",
     fa: "ما همیشه به دنبال وکلا و کارکنانی هستیم که از روز اول می‌خواهند ارتباط واقعی با موکل داشته باشند — در دفتری که کار شما هرگز ناشناس نمی‌ماند.",
@@ -56,7 +56,7 @@ export const UI = {
   aboutEyebrow: { en: "About", fa: "درباره ما" },
   aboutHeading: { en: "Read more about Pars", fa: "بیشتر درباره پارس بخوانید" },
 
-  footerLegalHeading: { en: "Legal", fa: "حقوقی" },
+  footerLegalHeading: { en: "Legal", fa: "امور حقوقی" },
   footerTerms: { en: "Terms of Use", fa: "شرایط استفاده" },
   footerPrivacy: { en: "Privacy Policy", fa: "سیاست حریم خصوصی" },
   footerAccessibility: { en: "Accessibility", fa: "دسترسی‌پذیری" },

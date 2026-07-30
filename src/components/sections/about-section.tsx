@@ -1,8 +1,8 @@
 "use client";
 
-import { ArrowRight, Landmark } from "lucide-react";
+import Image from "next/image";
+import { ArrowRight } from "lucide-react";
 import { LocalizedBlock } from "@/components/localized-block";
-import { PlaceholderPhoto } from "@/components/placeholder-media";
 import { useLanguage } from "@/lib/language-context";
 import { UI, t } from "@/lib/dictionary";
 
@@ -20,7 +20,15 @@ export function AboutSection() {
           <ArrowRight className="size-6 shrink-0 text-primary transition-transform group-hover:translate-x-1 rtl:rotate-180" />
         </a>
       </div>
-      <PlaceholderPhoto icon={Landmark} className="min-h-[420px] lg:min-h-full" />
+      <div className="relative min-h-[420px] overflow-hidden lg:min-h-full">
+        <Image
+          src="/images/about.webp"
+          alt=""
+          fill
+          sizes="(min-width: 1024px) 50vw, 100vw"
+          className="object-cover"
+        />
+      </div>
     </section>
   );
 }

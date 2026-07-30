@@ -37,18 +37,39 @@ silently disappears when combined with a real color class like
 `text-primary`. Don't rename these back to a `text-` prefix.
 
 ## Sections (`src/components/sections/`, assembled in `src/app/page.tsx`)
-Header (mega-menu nav, EN/فارسی toggle, Contact CTA) → Hero (video-placeholder
-background) → Insights (2×2 article grid, warm band) → Practice Areas (split
-panel) → Case Results (3-card grid, anonymized outcomes) → Team (photo grid +
-pull-quote) → Careers (split panel) → Culture video moment → About (split
-panel) → Footer (single Toronto office, social links, legal disclaimer,
-terracotta band).
+Header (mega-menu nav, EN/فارسی toggle, Contact CTA, logo mark) → Hero
+(Toronto skyline video background) → Insights (2×2 article grid, warm band)
+→ Practice Areas (split panel) → Case Results (3-card grid, anonymized
+outcomes) → Team (photo grid + pull-quote) → Careers (split panel) → Culture
+video moment (crossfade montage of team clips) → About (split panel) →
+Footer (single Toronto office, social links, full logo lockup, legal
+disclaimer, terracotta band).
+
+## Brand assets
+- `public/images/logo-mark.webp` — square monogram only, transparent
+  background, used in the header (replaces the old "P" badge) and as the
+  source for favicons.
+- `public/images/logo-full.webp` — monogram + "Pars Law Firm" wordmark,
+  transparent background, used in the footer.
+- `public/images/logo.png` — original source file as supplied, kept
+  untouched for regenerating the assets above if needed.
+- `src/app/favicon.ico` / `icon.png` / `apple-icon.png` — Next.js
+  auto-detects these by filename. `favicon.ico` is a hand-built
+  multi-resolution (16/32/48px) PNG-format ICO — ffmpeg's own ICO muxer
+  produces a container the Rust `image` crate (used by Turbopack's build)
+  rejects, so it's assembled manually; see git history for the approach if
+  it ever needs regenerating. Favicon/apple-touch-icon intentionally keep
+  the logo's dark background (unlike the transparent header/footer
+  versions) since a transparent favicon disappears on a light browser tab.
 
 ## Known gaps / next steps
-- `public/videos/hero-placeholder.mp4` and `culture-placeholder.mp4` don't
-  exist yet — sections fall back to a CSS gradient until real video is added.
-- `PlaceholderPhoto` (`src/components/placeholder-media.tsx`) stands in for
-  all real photography — swap for actual assets when available.
-- Mobile layout wasn't visually screenshot-tested (browser window resize
-  wasn't controllable in the dev session); responsive classes were code-
-  audited instead (mobile-first `grid-cols-1`/`md:`/`lg:` throughout).
+- `PlaceholderPhoto` (`src/components/placeholder-media.tsx`) is now only a
+  fallback (rendered if an image fails to load) — every section has real
+  generated photography wired in.
+- Team photos exist for all 7 members; the hero and culture-section videos
+  currently only feature 5 of the 7 (Roya Kazemi and, in the culture
+  montage, Arman Tehrani are not included — add their clips and re-run the
+  ffmpeg crossfade concat if/when generated).
+- Mobile layout has been visually screenshot-verified at 390px width (see
+  `docs/design-references/pars-mobile.png`) — no horizontal-overflow issues
+  found across sections.

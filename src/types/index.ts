@@ -30,6 +30,7 @@ export interface CaseResult {
   practiceArea: LocalizedText;
   title: LocalizedText;
   summary: LocalizedText;
+  image?: string;
 }
 
 export interface TeamMember {

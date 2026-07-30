@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { FacebookIcon, InstagramIcon, LinkedInIcon } from "@/components/icons";
 import { LocalizedBlock } from "@/components/localized-block";
 import { useLanguage } from "@/lib/language-context";
@@ -41,17 +42,20 @@ export function Footer() {
       </div>
 
       <div className="container-pars grid grid-cols-1 gap-10 py-14 md:grid-cols-3">
-        <div className="flex items-center gap-4">
-          {SOCIAL_LINKS.map(({ icon: Icon, href, label }) => (
-            <a
-              key={label}
-              href={href}
-              aria-label={label}
-              className="flex size-10 items-center justify-center rounded-full border border-band-terracotta-foreground/30 text-band-terracotta-foreground transition-colors hover:border-band-terracotta-foreground hover:bg-band-terracotta-foreground/10"
-            >
-              <Icon className="size-4" />
-            </a>
-          ))}
+        <div className="flex flex-col gap-6">
+          <Image src="/images/logo-full.webp" alt="Pars Law Firm" width={116} height={134} className="h-16 w-auto self-start" />
+          <div className="flex items-center gap-4">
+            {SOCIAL_LINKS.map(({ icon: Icon, href, label }) => (
+              <a
+                key={label}
+                href={href}
+                aria-label={label}
+                className="flex size-10 items-center justify-center rounded-full border border-band-terracotta-foreground/30 text-band-terracotta-foreground transition-colors hover:border-band-terracotta-foreground hover:bg-band-terracotta-foreground/10"
+              >
+                <Icon className="size-4" />
+              </a>
+            ))}
+          </div>
         </div>
 
         <div>

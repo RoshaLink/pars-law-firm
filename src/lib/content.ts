@@ -26,7 +26,7 @@ export const NAV_GROUPS: NavGroup[] = [
     ],
   },
   {
-    label: { en: "Insights", fa: "دیدگاه‌ها" },
+    label: { en: "Insights", fa: "اخبار و مقالات" },
     href: "#insights",
     children: [
       { label: { en: "News", fa: "اخبار" }, href: "#insights" },
@@ -54,7 +54,7 @@ export const ARTICLES: InsightArticle[] = [
     },
     excerpt: {
       en: "How the latest category-based selections affect skilled worker candidates, and what applicants should prepare before the next round.",
-      fa: "فراخوان‌های اخیر بر اساس دسته‌بندی چه تأثیری بر متقاضیان نیروی کار ماهر دارند و پیش از دور بعدی چه باید آماده کرد.",
+      fa: "فراخوان‌های اخیر بر اساس دسته‌بندی چه تأثیری بر متقاضیان نیروی کار ماهر دارند و متقاضیان پیش از دور بعدی چه چیزهایی باید آماده کنند.",
     },
     href: "#insights",
   },
@@ -96,7 +96,7 @@ export const ARTICLES: InsightArticle[] = [
     },
     excerpt: {
       en: "A practical timeline for international students in Toronto weighing PGWP, provincial nominee streams, and Express Entry.",
-      fa: "یک برنامه زمانی کاربردی برای دانشجویان بین‌المللی در تورنتو برای انتخاب میان PGWP، برنامه‌های استانی و اکسپرس‌انتری.",
+      fa: "یک برنامه زمانی کاربردی برای دانشجویان بین‌المللی در تورنتو برای انتخاب میان مجوز کار پس از تحصیل (PGWP)، برنامه‌های استانی و اکسپرس‌انتری.",
     },
     href: "#insights",
   },
@@ -111,6 +111,7 @@ export const CASE_RESULTS: CaseResult[] = [
       en: "Guided a spousal sponsorship application through a complex prior-refusal history to a successful approval within one processing cycle.",
       fa: "یک پرونده حمایت همسر با سابقه رد پیچیده را با موفقیت طی یک چرخه رسیدگی به تأیید رساندیم.",
     },
+    image: "/images/case-results/family-sponsorship.webp",
   },
   {
     id: "pr-appeal-overturned",
@@ -120,6 +121,7 @@ export const CASE_RESULTS: CaseResult[] = [
       en: "Built and argued a federal court judicial review that overturned an unreasonable permanent residency refusal.",
       fa: "با تنظیم و دفاع از یک درخواست بازبینی قضایی در دادگاه فدرال، رد غیرمنطقی اقامت دائم را لغو کردیم.",
     },
+    image: "/images/case-results/pr-appeal-overturned.webp",
   },
   {
     id: "custody-mediation-resolved",
@@ -127,8 +129,9 @@ export const CASE_RESULTS: CaseResult[] = [
     title: { en: "Contested Custody Resolved by Mediation", fa: "حل اختلاف حضانت از طریق میانجی‌گری" },
     summary: {
       en: "Negotiated a full parenting-time agreement out of court, avoiding trial and preserving a workable co-parenting relationship.",
-      fa: "یک توافق کامل زمان والدین را خارج از دادگاه مذاکره کردیم و از محاکمه جلوگیری شد.",
+      fa: "یک توافق کامل درباره زمان والدین را خارج از دادگاه مذاکره کردیم، از برگزاری دادگاه جلوگیری کردیم و رابطه‌ای کارآمد برای مشارکت در فرزندپروری را حفظ کردیم.",
     },
+    image: "/images/case-results/custody-mediation.webp",
   },
 ];
 
@@ -138,7 +141,7 @@ export const TEAM: TeamMember[] = [
   { id: "leila-amini", name: "Leila Amini", role: { en: "Senior Associate, Immigration", fa: "وکیل ارشد، مهاجرت" }, initials: "LA", photo: "/images/team/leila-amini.webp" },
   { id: "kian-moradi", name: "Kian Moradi", role: { en: "Associate, Family Law", fa: "وکیل، حقوق خانواده" }, initials: "KM", photo: "/images/team/kian-moradi.webp" },
   { id: "neda-hosseini", name: "Neda Hosseini", role: { en: "Immigration Paralegal", fa: "دستیار حقوقی، مهاجرت" }, initials: "NH", photo: "/images/team/neda-hosseini.webp" },
-  { id: "arman-tehrani", name: "Arman Tehrani", role: { en: "Law Clerk, Family Law", fa: "منشی حقوقی، حقوق خانواده" }, initials: "AT", photo: "/images/team/arman-tehrani.webp" },
+  { id: "arman-tehrani", name: "Arman Tehrani", role: { en: "Law Clerk, Family Law", fa: "کارمند حقوقی، حقوق خانواده" }, initials: "AT", photo: "/images/team/arman-tehrani.webp" },
   { id: "roya-kazemi", name: "Roya Kazemi", role: { en: "Office Manager", fa: "مدیر دفتر" }, initials: "RK", photo: "/images/team/roya-kazemi.webp" },
 ];
 
@@ -147,7 +150,7 @@ export const TEAM_QUOTE = {
   role: { en: "Founding Partner, Immigration", fa: "شریک مؤسس، مهاجرت" },
   quote: {
     en: "“Every file in this office belongs to a family waiting on an answer. We treat the wait like it's ours too.”",
-    fa: "«‌هر پرونده در این دفتر متعلق به خانواده‌ای است که منتظر پاسخ است. ما این انتظار را مثل انتظار خودمان جدی می‌گیریم.»",
+    fa: "«هر پرونده در این دفتر متعلق به خانواده‌ای است که منتظر پاسخ است. ما با این انتظار طوری رفتار می‌کنیم که انگار متعلق به خودمان است.»",
   },
 };
 

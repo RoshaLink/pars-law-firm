@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { LocalizedBlock } from "@/components/localized-block";
 import { PlaceholderPhoto } from "@/components/placeholder-media";
@@ -23,7 +24,17 @@ export function CaseResultsSection() {
         <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-3">
           {CASE_RESULTS.map((item) => (
             <div key={item.id} className="group relative flex min-h-[420px] flex-col justify-end overflow-hidden">
-              <PlaceholderPhoto tone="warm" className="absolute inset-0" />
+              {item.image ? (
+                <Image
+                  src={item.image}
+                  alt=""
+                  fill
+                  sizes="(min-width: 768px) 33vw, 100vw"
+                  className="object-cover"
+                />
+              ) : (
+                <PlaceholderPhoto tone="warm" className="absolute inset-0" />
+              )}
               <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent" />
               <LocalizedBlock className="relative z-10 p-6">
                 <span className="type-eyebrow text-primary">{t(item.practiceArea, locale)}</span>
