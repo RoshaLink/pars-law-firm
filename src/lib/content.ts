@@ -141,7 +141,7 @@ export const TEAM: TeamMember[] = [
   { id: "leila-amini", name: "Leila Amini", role: { en: "Senior Associate, Immigration", fa: "وکیل ارشد، مهاجرت" }, initials: "LA", photo: "/images/team/leila-amini.webp" },
   { id: "kian-moradi", name: "Kian Moradi", role: { en: "Associate, Family Law", fa: "وکیل، حقوق خانواده" }, initials: "KM", photo: "/images/team/kian-moradi.webp" },
   { id: "neda-hosseini", name: "Neda Hosseini", role: { en: "Immigration Paralegal", fa: "دستیار حقوقی، مهاجرت" }, initials: "NH", photo: "/images/team/neda-hosseini.webp" },
-  { id: "arman-tehrani", name: "Arman Tehrani", role: { en: "Law Clerk, Family Law", fa: "کارمند حقوقی، حقوق خانواده" }, initials: "AT", photo: "/images/team/arman-tehrani.webp" },
+  { id: "arman-tehrani", name: "Arman Tehrani", role: { en: "Law Clerk, Family Law", fa: "کارشناس حقوقی، حقوق خانواده" }, initials: "AT", photo: "/images/team/arman-tehrani.webp" },
   { id: "roya-kazemi", name: "Roya Kazemi", role: { en: "Office Manager", fa: "مدیر دفتر" }, initials: "RK", photo: "/images/team/roya-kazemi.webp" },
 ];
 
