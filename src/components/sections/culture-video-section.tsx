@@ -4,8 +4,9 @@ import { useState } from "react";
 import { LocalizedBlock } from "@/components/localized-block";
 import { useLanguage } from "@/lib/language-context";
 import { UI, t } from "@/lib/dictionary";
+import { withBasePath } from "@/lib/utils";
 
-const CULTURE_VIDEO_SRC = "/videos/culture-placeholder.mp4";
+const CULTURE_VIDEO_SRC = withBasePath("/videos/culture-placeholder.mp4");
 
 export function CultureVideoSection() {
   const { locale } = useLanguage();

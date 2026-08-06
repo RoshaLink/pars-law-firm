@@ -6,6 +6,7 @@ import { LocalizedBlock } from "@/components/localized-block";
 import { useLanguage } from "@/lib/language-context";
 import { UI, t } from "@/lib/dictionary";
 import { OFFICE } from "@/lib/content";
+import { withBasePath } from "@/lib/utils";
 
 const SOCIAL_LINKS = [
   { icon: FacebookIcon, href: "#", label: "Facebook" },
@@ -43,7 +44,7 @@ export function Footer() {
 
       <div className="container-pars grid grid-cols-1 gap-10 py-14 md:grid-cols-3">
         <div className="flex flex-col gap-6">
-          <Image src="/images/logo-full.webp" alt="Pars Law Firm" width={116} height={134} className="h-16 w-auto self-start" />
+          <Image src={withBasePath("/images/logo-full.webp")} alt="Pars Law Firm" width={116} height={134} className="h-16 w-auto self-start" />
           <div className="flex items-center gap-4">
             {SOCIAL_LINKS.map(({ icon: Icon, href, label }) => (
               <a

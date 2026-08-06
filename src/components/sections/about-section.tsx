@@ -5,6 +5,7 @@ import { ArrowRight } from "lucide-react";
 import { LocalizedBlock } from "@/components/localized-block";
 import { useLanguage } from "@/lib/language-context";
 import { UI, t } from "@/lib/dictionary";
+import { withBasePath } from "@/lib/utils";
 
 export function AboutSection() {
   const { locale } = useLanguage();
@@ -22,7 +23,7 @@ export function AboutSection() {
       </div>
       <div className="relative min-h-[420px] overflow-hidden lg:min-h-full">
         <Image
-          src="/images/about.webp"
+          src={withBasePath("/images/about.webp")}
           alt=""
           fill
           sizes="(min-width: 1024px) 50vw, 100vw"

@@ -7,6 +7,7 @@ import { PlaceholderPhoto } from "@/components/placeholder-media";
 import { useLanguage } from "@/lib/language-context";
 import { UI, t } from "@/lib/dictionary";
 import { CASE_RESULTS } from "@/lib/content";
+import { withBasePath } from "@/lib/utils";
 
 export function CaseResultsSection() {
   const { locale } = useLanguage();
@@ -26,7 +27,7 @@ export function CaseResultsSection() {
             <div key={item.id} className="group relative flex min-h-[420px] flex-col justify-end overflow-hidden">
               {item.image ? (
                 <Image
-                  src={item.image}
+                  src={withBasePath(item.image)}
                   alt=""
                   fill
                   sizes="(min-width: 768px) 33vw, 100vw"

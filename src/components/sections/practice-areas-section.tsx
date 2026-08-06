@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { LocalizedBlock } from "@/components/localized-block";
 import { useLanguage } from "@/lib/language-context";
 import { UI, t } from "@/lib/dictionary";
+import { withBasePath } from "@/lib/utils";
 
 export function PracticeAreasSection() {
   const { locale } = useLanguage();
@@ -28,7 +29,7 @@ export function PracticeAreasSection() {
       </div>
       <div className="relative min-h-[420px] overflow-hidden lg:min-h-full">
         <Image
-          src="/images/practice-areas.webp"
+          src={withBasePath("/images/practice-areas.webp")}
           alt=""
           fill
           sizes="(min-width: 1024px) 50vw, 100vw"

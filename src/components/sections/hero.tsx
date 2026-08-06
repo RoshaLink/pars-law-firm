@@ -5,13 +5,9 @@ import { Button } from "@/components/ui/button";
 import { LocalizedBlock } from "@/components/localized-block";
 import { useLanguage } from "@/lib/language-context";
 import { UI, t } from "@/lib/dictionary";
+import { withBasePath } from "@/lib/utils";
 
-/**
- * Swap this for the generated AI video, then flip `hasVideo` to true (or
- * just let the <video> element load — the gradient placeholder only shows
- * while the video is absent/loading/erroring).
- */
-const HERO_VIDEO_SRC = "/videos/hero-placeholder.mp4";
+const HERO_VIDEO_SRC = withBasePath("/videos/hero-placeholder.mp4");
 
 export function Hero() {
   const { locale } = useLanguage();

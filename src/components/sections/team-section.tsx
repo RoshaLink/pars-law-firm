@@ -6,6 +6,7 @@ import { LocalizedBlock } from "@/components/localized-block";
 import { useLanguage } from "@/lib/language-context";
 import { UI, t } from "@/lib/dictionary";
 import { TEAM, TEAM_QUOTE } from "@/lib/content";
+import { withBasePath } from "@/lib/utils";
 import type { TeamMember } from "@/types";
 
 function TeamPhoto({ member }: { member: TeamMember }) {
@@ -21,7 +22,7 @@ function TeamPhoto({ member }: { member: TeamMember }) {
 
   return (
     <Image
-      src={member.photo}
+      src={withBasePath(member.photo)}
       alt={member.name}
       fill
       sizes="(min-width: 768px) 25vw, 50vw"

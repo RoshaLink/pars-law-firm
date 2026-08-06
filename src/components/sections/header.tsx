@@ -8,7 +8,7 @@ import { LocalizedBlock } from "@/components/localized-block";
 import { useLanguage } from "@/lib/language-context";
 import { UI, t } from "@/lib/dictionary";
 import { NAV_GROUPS } from "@/lib/content";
-import { cn } from "@/lib/utils";
+import { cn, withBasePath } from "@/lib/utils";
 
 export function Header() {
   const { locale, setLocale } = useLanguage();
@@ -31,7 +31,7 @@ export function Header() {
     <header className="fixed inset-x-0 top-0 z-50 border-b border-border/60 bg-background/80 backdrop-blur-md">
       <div className="container-pars flex h-20 items-center justify-between">
         <a href="#top" className="flex items-center" aria-label="Pars home">
-          <Image src="/images/logo-mark.webp" alt="Pars" width={48} height={48} className="size-11" priority />
+          <Image src={withBasePath("/images/logo-mark.webp")} alt="Pars" width={48} height={48} className="size-11" priority />
         </a>
 
         <div className="flex items-center gap-3 md:gap-5">

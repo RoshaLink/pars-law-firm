@@ -5,6 +5,7 @@ import { ArrowRight } from "lucide-react";
 import { LocalizedBlock } from "@/components/localized-block";
 import { useLanguage } from "@/lib/language-context";
 import { UI, t } from "@/lib/dictionary";
+import { withBasePath } from "@/lib/utils";
 
 export function CareersSection() {
   const { locale } = useLanguage();
@@ -13,7 +14,7 @@ export function CareersSection() {
     <section id="careers" className="grid grid-cols-1 lg:grid-cols-2">
       <div className="relative order-2 min-h-[420px] overflow-hidden lg:order-1 lg:min-h-full">
         <Image
-          src="/images/careers.webp"
+          src={withBasePath("/images/careers.webp")}
           alt=""
           fill
           sizes="(min-width: 1024px) 50vw, 100vw"
