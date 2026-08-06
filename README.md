@@ -101,11 +101,6 @@ docs/
   research/          # Original design-token/layout research
 ```
 
-## Credits
-
-Scaffolded from the [AI Website Cloner Template](https://github.com/JCodesMore/ai-website-cloner-template)
-(MIT licensed) and built out from there with [Claude Code](https://docs.anthropic.com/en/docs/claude-code).
-
 ## License
 
 MIT
