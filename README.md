@@ -23,6 +23,26 @@ fully bilingual — the language toggle in the header switches all copy
 between English and Farsi, including right-to-left text flow for Farsi
 content.
 
+### Section by section
+
+<table>
+  <tr>
+    <td width="50%"><strong>Recent Insights</strong><br/><img src="docs/design-references/pars-insights.png" alt="Insights section — 2x2 grid of news and articles" width="100%" /></td>
+    <td><strong>Practice Areas → Case Results</strong><br/><img src="docs/design-references/pars-practice-areas.png" alt="Practice Areas split panel leading into the Case Results section" width="100%" /></td>
+  </tr>
+  <tr>
+    <td><strong>Case Results</strong><br/><img src="docs/design-references/pars-case-results.png" alt="Case Results — three anonymized outcome cards" width="100%" /></td>
+    <td><strong>Team</strong><br/><img src="docs/design-references/pars-team.png" alt="Team section — photo grid of firm members" width="100%" /></td>
+  </tr>
+  <tr>
+    <td><strong>Careers → Life at Pars</strong><br/><img src="docs/design-references/pars-careers.png" alt="Careers split panel leading into the Life at Pars video moment" width="100%" /></td>
+    <td><strong>Life at Pars (video moment)</strong><br/><img src="docs/design-references/pars-culture.png" alt="Life at Pars — full-bleed video moment section" width="100%" /></td>
+  </tr>
+  <tr>
+    <td colspan="2"><strong>About → Footer</strong><br/><img src="docs/design-references/pars-footer.png" alt="About panel leading into the footer with office contact details" width="100%" /></td>
+  </tr>
+</table>
+
 ## Tech Stack
 
 - **Next.js 16** — App Router, React 19, TypeScript strict
@@ -80,11 +100,6 @@ docs/
   design-references/ # Screenshots and visual references
   research/          # Original design-token/layout research
 ```
-
-## Credits
-
-Scaffolded from the [AI Website Cloner Template](https://github.com/JCodesMore/ai-website-cloner-template)
-(MIT licensed) and built out from there with [Claude Code](https://docs.anthropic.com/en/docs/claude-code).
 
 ## License
 

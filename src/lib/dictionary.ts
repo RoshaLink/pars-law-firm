@@ -50,8 +50,8 @@ export const UI = {
   },
   careersLink: { en: "Careers at Pars", fa: "فرصت‌های شغلی در پارس" },
 
-  cultureEyebrow: { en: "Life at Pars", fa: "زندگی در پارس" },
-  cultureHeading: { en: "Behind the case files", fa: "پشت پرونده‌ها" },
+  cultureEyebrow: { en: "Life at Pars", fa: "فضای کاری در پارس" },
+  cultureHeading: { en: "Behind the case files", fa: "فراتر از پرونده‌ها" },
 
   aboutEyebrow: { en: "About", fa: "درباره ما" },
   aboutHeading: { en: "Read more about Pars", fa: "بیشتر درباره پارس بخوانید" },
