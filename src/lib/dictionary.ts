@@ -62,6 +62,7 @@ export const UI = {
   footerAccessibility: { en: "Accessibility", fa: "دسترسی‌پذیری" },
   footerCookies: { en: "Cookie Policy", fa: "سیاست کوکی" },
   footerResourcesHeading: { en: "Resources", fa: "منابع" },
+  footerCredit: { en: "Designed by RoshaLink", fa: "طراحی توسط RoshaLink" },
   footerDisclaimer: {
     en: "The content of this website is provided for general information only and does not constitute legal advice. No lawyer-client relationship is formed by visiting this site.",
     fa: "محتوای این وب‌سایت صرفاً برای اطلاع‌رسانی عمومی ارائه شده و به منزله مشاوره حقوقی نیست. مراجعه به این سایت هیچ رابطه وکیل-موکلی ایجاد نمی‌کند.",

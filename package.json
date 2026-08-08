@@ -1,27 +1,23 @@
 {
-  "name": "ai-website-clone-template",
-  "version": "0.3.1",
+  "name": "pars-law-firm",
+  "version": "0.1.0",
   "private": true,
-  "description": "Clone any website into a clean, modern Next.js codebase using AI coding agents",
-  "author": "JCodesMore",
+  "description": "Bilingual (English/Farsi) marketing site for Pars, a Toronto immigration and family law firm",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/JCodesMore/ai-website-cloner-template.git"
+    "url": "https://github.com/RoshaLink/pars-law-firm.git"
   },
-  "homepage": "https://github.com/JCodesMore/ai-website-cloner-template",
+  "homepage": "https://roshalink.github.io/pars-law-firm/",
   "bugs": {
-    "url": "https://github.com/JCodesMore/ai-website-cloner-template/issues"
+    "url": "https://github.com/RoshaLink/pars-law-firm/issues"
   },
   "keywords": [
-    "claude-code",
-    "website-clone",
-    "reverse-engineering",
     "nextjs",
-    "ai",
-    "template",
     "tailwindcss",
-    "shadcn-ui"
+    "shadcn-ui",
+    "law-firm",
+    "immigration-law"
   ],
   "engines": {
     "node": ">=24"

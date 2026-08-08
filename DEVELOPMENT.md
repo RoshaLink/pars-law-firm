@@ -1,6 +1,4 @@
-@AGENTS.md
-
-# Pars — Project Notes
+# Development Notes
 
 Bilingual (English / Farsi) marketing site for **Pars**, a fictional Toronto
 immigration & family law firm. Built as a structural/pattern rebuild inspired
@@ -61,6 +59,15 @@ disclaimer, terracotta band).
   it ever needs regenerating. Favicon/apple-touch-icon intentionally keep
   the logo's dark background (unlike the transparent header/footer
   versions) since a transparent favicon disappears on a light browser tab.
+
+## Deployment
+Static export (`output: "export"` in `next.config.ts`) published to GitHub
+Pages via `.github/workflows/deploy-pages.yml` on every push to `main`.
+`basePath`/`assetPrefix` are derived automatically from `GITHUB_REPOSITORY`
+at build time, and `withBasePath()` (`src/lib/utils.ts`) prefixes the few
+hardcoded asset paths (video `<source>` tags) that don't go through
+`next/image`. Images are served unoptimized since static hosting has no
+image-optimization server.
 
 ## Known gaps / next steps
 - `PlaceholderPhoto` (`src/components/placeholder-media.tsx`) is now only a

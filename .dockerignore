@@ -27,23 +27,6 @@ Thumbs.db
 *.swp
 *.swo
 
-# Agent / AI tool configs (not needed at runtime)
-.claude
-.codex
-.cursor
-.windsurf
-.gemini
-.continue
-.amazonq
-.augment
-.opencode
-.aider.conf.yml
-.clinerules
-.windsurfrules
-AGENTS.md
-CLAUDE.md
-GEMINI.md
-
 # Docs / research (large, not needed at runtime)
 docs
 scripts
@@ -56,5 +39,5 @@ docker-compose.yml
 # Misc
 *.tsbuildinfo
 README.md
-CHANGELOG.md
+DEVELOPMENT.md
 LICENSE

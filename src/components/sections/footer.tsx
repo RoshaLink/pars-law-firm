@@ -85,6 +85,9 @@ export function Footer() {
         <p className="mt-3 text-xs text-band-terracotta-foreground/75">
           © {new Date().getFullYear()} Pars. All rights reserved.
         </p>
+        <LocalizedBlock className="mt-1 text-xs text-band-terracotta-foreground/60">
+          {t(UI.footerCredit, locale)}
+        </LocalizedBlock>
       </div>
     </footer>
   );
